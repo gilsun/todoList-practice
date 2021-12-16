@@ -1,4 +1,4 @@
-const InputForm = ({
+const NewList = ({
   inputText,
   setInputText,
   todos,
@@ -51,4 +51,4 @@ const InputForm = ({
   );
 };
 
-export default InputForm;
+export default NewList;
