@@ -12,7 +12,7 @@ const InputForm = ({ inputText, setInputText, todos, setTodos }) => {
       ...todos,
       {
         text: inputText,
-        compledted: false,
+        completed: false,
         id: Math.random() * 1000,
       },
     ]);

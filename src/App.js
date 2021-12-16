@@ -11,13 +11,17 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Gilsun's Todo List {inputText}</h1>
+        <h1>Gilsun's Todo List </h1>
       </header>
-      <InputForm todos={todos} setTodos={setTodos} inputText={inputText} setInputText={setInputText} />
-      <TodoList />
+      <InputForm
+        todos={todos}
+        setTodos={setTodos}
+        inputText={inputText}
+        setInputText={setInputText}
+      />
+      <TodoList setTodos={setTodos} todos={todos} />
     </div>
   );
 }
 
 export default App;
- 
