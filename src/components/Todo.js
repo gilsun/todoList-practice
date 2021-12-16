@@ -3,7 +3,7 @@ const Todo = ({ text, todo, setTodos, todos }) => {
     setTodos(todos.filter((el) => el.id !== todo.id));
   };
 
-  const completedHander = () => {
+  const completedHandler = () => {
     setTodos(
       todos.map((item) => {
         if (item.id === todo.id) {
@@ -20,7 +20,7 @@ const Todo = ({ text, todo, setTodos, todos }) => {
   return (
     <div className="todo">
       <li className={`todo-item ${todo.completed ? "completed":'' }`}>{text}</li>
-      <button onClick={completedHander} className="complete-btn">
+      <button onClick={completedHandler} className="complete-btn">
         <i className="fas fa-check"></i>
       </button>
       <button onClick={deleteHandler} className="trash-btn">
